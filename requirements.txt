@@ -1,0 +1,6 @@
+streamlit
+pandas
+numpy
+langchain
+faiss-cpu
+openai
