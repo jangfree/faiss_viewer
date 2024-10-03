@@ -48,7 +48,7 @@ if uploaded_files is not None and len(uploaded_files) > 0:
         try:
             vectorstore = FAISS.load_local(
                 tmpdirname,
-                embeddings=OpenAIEmbeddings(model="text-embedding-ada-002"),
+                embeddings=OpenAIEmbeddings(model="text-embedding-3-small"),
                 allow_dangerous_deserialization=True
             )
         except Exception as e:
